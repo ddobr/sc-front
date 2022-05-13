@@ -1,0 +1,42 @@
+.chip {
+    padding: 5px 10px;
+    border-radius: 10px;
+    height: 32px;
+    box-sizing: border-box;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 12px;
+    align-items: center;
+    overflow: hidden;
+
+    .icon {
+        margin: 0;
+        padding: 0;
+        vertical-align:top;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 22px;
+        overflow: hidden;
+    }
+    
+    .text {
+        vertical-align: middle;
+    }
+}
+
+.done {
+    background-color: var(--correct-bg);
+    color: var(--correct-fg);
+}
+
+.inProgress {
+    background-color: var(--warning-bg);
+    color: var(--warning-fg);
+}
+
+.expired {
+    background-color: var(--error-bg);
+    color: var(--error-fg);
+}

@@ -1,0 +1,54 @@
+.questionBlock {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid var(--main-orange);
+    border-radius: 10px;
+    background-color: rgba(229, 112, 42, 0.0);
+    margin-top: 20px;
+    transition: background-color 0.5s ease-in;
+
+    .mobileHeader {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 18px;
+
+        .mobileIndex {
+            font-size: 18px;
+            font-family: var(--bold);
+            color: var(--main-orange);
+        }
+    }
+
+    &:last-of-type {
+        margin-bottom: 40px;
+    }
+
+    .title {
+        font-size: 24px;
+        line-height: 41px;
+        margin-bottom: 10px;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .description {
+        font-size: 14px;
+        line-height: 25px;
+        margin-bottom: 10px;
+    }
+}
+
+.incorrect {
+    background-color: rgba(229, 112, 42, 0.1);
+}
+
+.mobileOverflow {
+    overflow-y: scroll;
+    height: 200px;
+}

@@ -1,0 +1,64 @@
+.linkCard {
+    box-sizing: border-box;
+    width: calc(100% - 2px);
+    padding: 20px;
+    border: 1px solid var(--main-orange);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: margin 0.1s ease;
+
+    .image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .title {
+        margin-right: auto;
+        font-family: var(--bold);
+        color: var(--black);
+        margin-left: 20px;
+        text-decoration: none;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .sideText {
+        color: var(--main-orange);
+        margin-right: 1vw;
+        margin-left: 0.5vw;
+        font-size: 14px;
+        line-height: 172.8%;
+    }
+
+    .arrow {
+        color: var(--main-orange);
+        font-size: 1rem;
+    }
+}
+
+.disabled {
+    border: 1px solid var(--light-orange);
+    cursor: default;
+
+    .image {
+        opacity: 0.7;
+    }
+
+    .title {
+        color: var(--grey);
+    }
+
+    .sideText {
+        color: var(--light-orange);
+    }
+
+    .arrow {
+        color: var(--light-orange);
+    }
+}

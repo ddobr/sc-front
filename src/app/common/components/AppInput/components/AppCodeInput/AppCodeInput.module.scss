@@ -1,0 +1,70 @@
+.codeInput {
+    max-width: 200px;
+    width: 100%;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+
+    .valueWrapper {
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+
+        .item {
+            width: 25px;
+            text-align: center;
+            border-bottom: 2px solid var(--main-orange);
+            overflow: hidden;
+
+            .noValue {
+                color: var(--light-grey);
+            }
+
+            span {
+                text-align: center;
+            }
+        }
+
+        .unfocused {
+            border-bottom: 2px solid var(--light-orange);
+        }
+
+        .fadeIn {
+            span {
+                position: relative;
+                animation-name: slidein;
+                animation-duration: 0.1s;
+            }
+        }
+    }
+
+    .input {
+        position: absolute;
+        pointer-events: none;
+        color: transparent;
+        caret-color: transparent;
+        box-sizing: border-box;
+        top: 0;
+        max-width: 200px;
+        height: 20px;
+        font-size: 16px;
+        width: 100%;
+        z-index: -1;
+        border: none;
+        outline: none;
+    }
+}
+
+@keyframes slidein {
+    from {
+      bottom: -10px;
+    }
+  
+    to {
+        bottom: 0;
+    }
+  }

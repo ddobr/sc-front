@@ -1,0 +1,49 @@
+.simpleCollapseGroup {
+    width: 100%;
+
+    --icon-size: 24px;
+    
+    .groupHeader {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        height: var(--icon-size);
+        border-radius: 3px;
+
+        .groupTitle {
+            font-family: var(--bold);
+            margin-left: 6px;
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        .expandIcon {
+            height: var(--icon-size);
+            width: var(--icon-size);
+            transition: transform 0.2s ease;
+            color: var(--main-orange);
+            transform: rotate(0);
+            
+            &.expanded {
+                transform: rotate(180deg);
+            }
+        }
+
+        @media (hover: hover) { 
+            &:hover {
+                background-color: #0000001a;
+            }
+        }
+    }
+
+    .groupCollapsable {
+        height: 0px;
+        transition: none;
+        overflow: hidden;
+
+        .groupContent {
+            margin-left: 6px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0);
+        }
+    }
+}

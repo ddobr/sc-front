@@ -1,0 +1,18 @@
+.featureModalWrapper {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+}
+
+.orangeBg {
+    background-color: rgba(229,112,42,0.9);
+}
+
+.whiteBg {
+    background-color: #ffffffa9;
+}
+
+.hasPointerEvents {
+    pointer-events: auto;
+}

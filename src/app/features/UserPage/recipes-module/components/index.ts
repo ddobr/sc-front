@@ -1,0 +1,1 @@
+export * from './recipe-type-side-navigation/recipe-type-side-navigation.component';

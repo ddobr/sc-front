@@ -1,0 +1,1 @@
+export * from './components/editor-block/editor-block.component';

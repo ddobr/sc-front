@@ -1,0 +1,126 @@
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+
+    .menu {
+        width: 90%;
+        max-width: 1100px;
+        height: 100vh;
+        max-height: 600px;
+
+        border: 1px solid var(--main-orange);
+        border-radius: 10px;
+
+        display: flex;
+        justify-content: space-between;
+
+        .sideDecoration {
+            width: 54%;
+            max-width: 600px;
+            height: 100%;
+            border-top-left-radius: 9px;
+            border-bottom-left-radius: 9px;
+            background:  no-repeat url('../../../../../assets/img/logoSymbol.svg') center, var(--main-orange);
+        }
+
+        .formSide {
+            width: 46%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+}
+
+.emailEnter {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .btn {
+        width: 90%;
+    }
+
+    .control {
+        margin-bottom: 0px;
+        width: 90%;
+
+        .emailInput {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.codeEnter {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .title {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .control {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .buttons {
+        max-width: 300px;
+        width: 90%;
+    }
+
+    .desc {
+        margin-bottom: 40px;
+        max-width: 300px;
+        width: 90%;
+    }
+
+    .error {
+        margin-top: -28px;
+        font-size: 14px;
+        margin-bottom: 10px;
+        height: 18px;
+    }
+
+    .highlight {
+        color: var(--main-orange);
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        height: 77vh;
+        .menu {
+            margin-top: auto;
+            height: 80%;
+            .sideDecoration {
+                display: none;
+            }
+            
+            .formSide {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }            
+        }
+    }
+}

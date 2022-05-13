@@ -1,0 +1,210 @@
+:root {
+    // Colors
+    --black: #343534;
+    --white: #ffffff;
+    --grey: #808080;
+    --light-grey:  #E5E5E5;
+    --main-orange: #E5702A;
+    --light-orange: #FFAB79;
+    --correct-fg: #5BCE00;
+    --correct-bg: #EFFBE6;
+    --warning-fg: #E5702A;
+    --warning-bg: rgba(229, 112, 42, 0.1);
+    --error-fg: #E52A2A;
+    --error-bg: rgba(229, 42, 42, 0.1);
+  
+    --logo-url: url("/assets/img/logo.svg");
+    --logo-white-symbol-url: url("/assets/img/logoSymbol.svg");
+    --logo-colored: url("/assets/img/logo-colored.svg");
+
+    --border-radius: 8px;
+
+    // Font
+    --bold: "bold";
+    --boldItalic: "boldItalic";
+    --heavy: "heavy";
+    --heavyItalic: "heavyItalic";
+    --medium: "medium";
+    --italic: "italic";
+    --light: "light";
+    --lightItalic: "lightItalic";
+    --thin: "thin";
+    --thinItalic: "thinItalic";
+    --ultraLight: "ultraLight";
+    --ultraLightItalic: "ultraLightItalic";
+}
+
+.modal {
+  pointer-events: auto;
+  background-color: red;
+}
+
+@font-face {
+  font-family: "bold";
+  src: url(./assets/fonts/HelveticaBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "boldItalic";
+  src: url(./assets/fonts/HelveticaBoldItalic.ttf) format("truetype");
+}
+@font-face {
+  font-family: "heavy";
+  src: url(./assets/fonts/HelveticaHeavy.ttf) format("truetype");
+}
+@font-face {
+  font-family: "heavyItalic";
+  src: url(./assets/fonts/HelveticaHeavyItalic.ttf) format("truetype");
+}
+@font-face {
+  font-family: "medium";
+  src: url(./assets/fonts/HelveticaMedium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "italic";
+  src: url(./assets/fonts/HelveticaItalic.ttf) format("truetype");
+}
+@font-face {
+  font-family: "light";
+  src: url(./assets/fonts/HelveticaLight.ttf) format("truetype");
+}
+@font-face {
+  font-family: "lightItalic";
+  src: url(./assets/fonts/HelveticaLightItalic.ttf) format("truetype");
+}
+@font-face {
+  font-family: "thin";
+  src: url(./assets/fonts/HelveticaThin.ttf) format("truetype");
+}
+@font-face {
+  font-family: "thinItalic";
+  src: url(./assets/fonts/HelveticaThinItalic.ttf) format("truetype");
+}
+@font-face {
+  font-family: "ultraLight";
+  src: url(./assets/fonts/HelveticaUltraLight.ttf) format("truetype");
+}
+@font-face {
+  font-family: "ultraLightItalic";
+  src: url(./assets/fonts/HelveticaUltraLightItalic.ttf) format("truetype");
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: var(--medium);
+  color: var(--black);
+  background-color: var(--white);
+}
+
+body {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0;
+  padding: 0;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+@media screen  and (min-width: 600px) {
+  
+}
+
+button {
+  font-family: var(--light);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--heavy);
+  margin: 0;
+}
+
+* {
+  &::selection {
+    color: var(--white);
+    background: var(--light-orange);
+  } 
+}
+
+
+h1 {
+  font-weight: 900;
+  font-size: 48px;
+  font-family: var(--heavy);
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 32px;
+  font-family: var(--heavy);
+}
+
+h3 {
+  font-weight: 900;
+  font-size: 22px;
+  font-family: var(--heavy);
+}
+
+b {
+  font-family: var(--bold);
+}
+
+i {
+  font-family: var(--italic);
+
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--main-orange);
+}
+
+input,
+textarea,
+select {
+  font-family: var(--ultraLight);
+}
+
+/* Scrollbar */
+html {
+  overflow-y: auto;
+  overflow-y: overlay;
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    background-color: var(--white);
+    display: none;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 6px;
+    background-color: var(--white) 0%;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media only screen and (max-width: 600px)  {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+}

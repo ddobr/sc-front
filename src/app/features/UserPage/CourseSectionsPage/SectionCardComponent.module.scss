@@ -1,0 +1,131 @@
+.sectionCard {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid var(--main-orange);
+    border-radius: 10px;
+
+    .cardHeader {
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+
+        .leftSide {
+            display: flex;
+
+            .sectionImage {
+                width: 40px;
+                height: 40px;
+                margin-right: 20px;
+            }
+
+            .sectionTitle {
+                font-family: var(--bold);
+                font-size: 24px;
+                line-height: 41px;
+                word-break: normal;
+            }
+        }
+
+        .rightSide {
+            display: flex;
+            align-items: center;
+
+            .progress {
+                font-size: 14px;
+                line-height: 24px;
+                color: var(--grey);
+            }
+
+            .button {
+                color: var(--main-orange);
+                font-size: 1rem;
+                transition: all 0.1s;
+                margin-left: 26px;
+            }
+        }
+    }
+
+    .contentWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: 0.15s linear;
+        transform-origin: top; 
+        overflow: hidden;
+    
+        .chapterCard {
+            width: 95%;
+            max-width: 520px;
+            text-decoration: none;
+            box-sizing: border-box;
+            cursor: pointer;
+            padding: 20px;
+            color: var(--black);
+            border: 1px solid var(--main-orange);
+            border-radius: 10px;
+            margin-bottom: 10px;
+
+            .chapterHeader {
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+
+                .chapterTitle {
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+
+                .percentage {
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: var(--main-orange);
+                }
+            }
+
+            .chapterFooter {
+                margin-top: 5px;
+                font-size: 14px;
+                line-height: 20px;
+                color: var(--grey);
+            }
+
+            &:first-of-type {
+                margin-top: 30px;
+            }
+
+            &:last-of-type {
+                margin-bottom: 20px;
+            }
+        }
+
+        .sectionQuizCard {
+            width: 95%;
+            margin-top: 10px;
+            max-width: 520px;
+            text-decoration: none;
+            box-sizing: border-box;
+            cursor: pointer;
+            padding: 25px 20px;
+            color: var(--black);
+            border: 1px solid var(--main-orange);
+            border-radius: 10px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+
+            .quizTitle {
+                font-size: 20px;
+                line-height: 28px;
+            }
+
+            .percentage {
+                font-size: 16px;
+                line-height: 22px;
+                color: var(--main-orange);
+            }
+        }
+    }
+}

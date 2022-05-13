@@ -1,0 +1,34 @@
+.userInfoSide {
+    min-width: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    align-self: flex-start;
+    justify-content: space-between;
+
+    .progressBar {
+        content: '';
+        display: inline-block;
+        width: 95%;
+        height: 10px;
+        background-color: var(--light-orange);
+        border-radius: 10px;
+        overflow-x: hidden;
+
+        .progress {
+            content: '';
+            width: 0%;
+            height: 10px;
+            border-radius: 10px;
+            margin-left: -5px;
+            background-color: var(--main-orange);
+        }
+    }
+
+    .percentage {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 24px;
+    }
+}

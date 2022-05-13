@@ -1,0 +1,19 @@
+.swipeContiner {
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+
+    .row {
+        display: flex;
+        flex-shrink: 0;
+        
+        .child {
+            flex-shrink: 0;
+            margin-right: 10px;
+
+            & > * {
+                margin: 0;
+            }
+        }
+    }
+}

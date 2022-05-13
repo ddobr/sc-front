@@ -1,0 +1,84 @@
+.common {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    background: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    box-sizing: border-box;
+    height: 41px;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    font-size: 14px;
+    font-family: var(--normal);
+    line-height: 21px;
+
+    &:focus {
+        text-decoration: underline;
+    }
+
+    &:disabled {
+        opacity: 0.8;
+        cursor: default;
+    }
+}
+
+.primary {
+    background-color: var(--main-orange);
+    color: var(--white);
+    padding: 10px;
+    border-radius: var(--border-radius);
+
+    @media (hover: hover) { 
+        &:hover:not(:disabled) {
+            background-color: #e77b3c;
+        }
+    }
+
+    &:active:not(:disabled) {
+        background-color: #e78750;
+    }
+}
+
+.secondary {
+    padding: 10px;
+    color: var(--main-orange);
+    border: 1px solid var(--main-orange);
+    border-radius: var(--border-radius);
+    transition: box-shadow 0.1s ease;
+
+    @media (hover: hover) { 
+        transition: box-shadow 0.3s ease;
+        &:hover:not(:disabled) {
+            box-shadow: inset 0px 0px 3px var(--main-orange);
+        }
+    }
+
+    &:active:not(:disabled) {
+        color: #e2986d;
+    }
+}
+
+.transparent {
+    padding: 10px;
+    color: var(--main-orange);
+    transition: background-color 0.1s ease;
+    border-radius: var(--border-radius);
+
+    @media (hover: hover) { 
+        transition: background-color 0.3s ease;
+        &:hover:not(:disabled) {
+            background-color: #e56f2a05;
+        }
+    }
+
+    &:active:not(:disabled) {
+        color: #e2986d;
+    }
+}

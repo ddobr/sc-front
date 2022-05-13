@@ -1,0 +1,16 @@
+.pageFooter {
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+
+    z-index: 99;
+    position: relative;
+    color: var(--main-orange);
+    background-color: var(--white);
+
+
+    .button {
+        width: 150px;
+    }
+}

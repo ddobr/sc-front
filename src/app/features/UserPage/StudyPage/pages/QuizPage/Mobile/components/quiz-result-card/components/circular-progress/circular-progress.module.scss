@@ -1,0 +1,15 @@
+.progress {
+    position: relative;
+    width: 140px;
+    height: 140px;
+
+    .digits {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        font-size: 30px;
+        font-family: var(--bold);
+    }
+}

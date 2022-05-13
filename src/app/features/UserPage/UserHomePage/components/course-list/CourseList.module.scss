@@ -1,0 +1,81 @@
+.header {
+    display: flex;
+    margin-top: 33px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter {
+    margin-right: 5px;
+    width: 50%;
+    max-width: 134px;
+    padding: 5px;
+    display: inline;
+    border: 1px solid var(--main-orange);
+    border-radius: 8px;
+    position: relative;
+    outline: none;
+    z-index: 2;
+    cursor: pointer;
+   
+
+    .filterHeader {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--main-orange);
+
+
+        .icon {
+            color: var(--main-orange);
+            transition: all 0.2s;
+            transform-origin: 4px 8px;
+            cursor: pointer;
+        }
+    }
+
+    .filterMenu {
+        border-bottom: 1px solid var(--main-orange);   
+        border-left: 1px solid var(--main-orange);   
+        border-right: 1px solid var(--main-orange);  
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px; 
+        top: 105%;
+        left: 8px;
+        right: 8px;
+        position: absolute;        
+        line-height: 2rem;
+        z-index: 2;
+
+  
+        backdrop-filter: blur(5px);
+
+        .filterOption {
+            padding-left: 0.5rem;
+            cursor: pointer;
+            &:hover {
+                background-color: var(--light-grey);
+            }
+
+            &:last-child {
+                border-bottom-right-radius: 7px;
+                border-bottom-left-radius: 7px; 
+            }
+        }
+    }
+}
+
+.page {
+    margin-top: 16px;
+    margin-bottom: 20px;
+}
+
+
+@media (hover:none), (hover:on-demand) { 
+    .header {
+        h2 {
+            font-size: 30px;
+        }
+    }
+}

@@ -1,0 +1,121 @@
+.pageHeadingContainer {
+    margin-bottom: 10px;
+
+    .goBackIcon {
+        width: 16px;
+        height: 16px;
+        margin-left: -34px;
+        margin-top: 12px;
+        
+        cursor: pointer;
+        position: absolute;
+    
+        &:hover {
+            width: 18px;
+            height: 18px;
+            margin-top: 11px;
+            margin-left: -35px;
+        }
+    }
+
+    .pageHeading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .pageHeadingText {
+            font-size: 32px;
+            line-height: 40px;
+            margin-bottom: 10px;
+            flex-grow: 1;
+        }
+    
+        .sideButtons {
+            display: flex;
+            flex-grow: 1;
+            justify-content: flex-end; 
+            margin-bottom: 10px;
+
+            & div {
+                margin-right: 27px;
+
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+        }
+    
+    }
+    
+    .description {
+        max-width: 400px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3; 
+        -webkit-box-orient: vertical;
+    }
+    
+}
+
+.skeleton {
+    margin-bottom: 30px;
+    margin-top: 5px;
+    height: 32px;
+}
+
+@media (max-width: 1100px) {
+    .pageHeadingContainer {
+        .goBackIcon {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .pageHeadingContainer {
+        .goBackIcon {
+            display: none;
+        }
+
+        .pageHeading {
+            flex-direction: column;
+            align-items: flex-start;
+
+            .sideButtons {
+                display: flex;
+                flex-grow: 1;
+                justify-content: flex-start; 
+                margin-bottom: 10px;
+    
+                & div {
+                    margin-right: 27px;
+    
+                    &:last-of-type {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (hover:none), (hover:on-demand) { 
+    .pageHeadingContainer {
+        margin-bottom: 0px;
+        
+        .goBackIcon {
+            display: none;
+        }
+
+        .pageHeading {
+            .pageHeadingText {
+                font-size: 28px;
+                line-height: 100%;
+                margin-left: 0;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

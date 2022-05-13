@@ -1,0 +1,31 @@
+.countdownWrapper {
+    width: 100%;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .lineWrapper {
+        flex-shrink: 1;
+        width: 100%;
+        background-color: var(--light-orange);
+        border-radius: 10px;
+        height: 10px;
+        overflow: hidden;
+        margin-right: 0 !important;
+        min-width: 100px;
+
+        .line {
+            content: '';
+            border-radius: 10px;
+            height: 10px;
+            background-color: var(--main-orange);
+            transition: width 500ms linear;
+        }
+    }
+
+    .timer {
+        flex-shrink: 0;
+        margin-left: 10px;
+    }
+}

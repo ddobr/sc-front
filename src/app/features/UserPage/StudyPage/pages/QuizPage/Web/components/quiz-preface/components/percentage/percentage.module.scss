@@ -1,0 +1,42 @@
+.percentageBlock {
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    min-height: 150px;
+    float: left;
+    margin-bottom: 20px;
+
+    h1 {
+        font-size: 40px;
+        line-height: 70%;
+    }
+}
+
+
+
+.bad {
+    background-color: var(--error-bg);
+
+    h1 {
+        color: var(--error-fg)
+    }
+}
+
+.ok {
+    background-color: var(--warning-bg);
+
+    h1 {
+        color: var(--warning-fg)
+    }
+}
+
+.good {
+    background-color: var(--correct-bg);
+
+    h1 {
+        color: var(--correct-fg)
+    }
+}

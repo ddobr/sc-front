@@ -1,0 +1,49 @@
+.attempt {
+    width: 100%;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--error-bg);
+
+    &:not(:last-of-type) {
+        margin-bottom: 20px;
+    }
+
+    .percentage {
+        font-size: 22px;
+        line-height: 140%;
+        font-family: var(--bold);
+    }
+
+    .date {
+        font-size: 14px;
+        line-height: 140%;
+    }
+}
+
+.bad {
+    background-color: var(--error-bg);
+
+    .percentage {
+        color: var(--error-fg)
+    }
+}
+
+.ok {
+    background-color: var(--warning-bg);
+
+    .percentage {
+        color: var(--warning-fg)
+    }
+}
+
+.good {
+    background-color: var(--correct-bg);
+
+    .percentage {
+        color: var(--correct-fg)
+    }
+}

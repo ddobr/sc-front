@@ -1,0 +1,102 @@
+.preface {
+    margin-bottom: 40px;
+
+    .blockAgain {
+        border: 1px solid var(--main-orange);
+        padding: 20px;
+        border-radius: 10px;
+
+        .main {
+            margin-bottom: 20px;
+            width: 100%;
+
+            div:nth-of-type(1) {
+                flex-shrink: 0;
+                margin-right: 20px;
+            }
+
+            .side {
+                flex-grow: 1;
+                width: 100%;
+
+                .comment {
+                    font-size: 32px;
+                    line-height: 100%;
+                    margin-bottom: 20px;
+                    display: inline-block;
+                }
+
+                .texts {
+                    font-size: 14px;
+                    line-height: 140%;
+                    font-family: var(--medium);
+                    margin-bottom: 20px;
+
+                    .warning {
+                        color: var(--main-orange);
+                    }
+                }
+
+                .buttons {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    margin-bottom: -5px;
+
+                    .button {
+                        width: 197px;
+                        flex: 1 1 130px;
+                        margin-right: 20px;
+                        margin-bottom: 5px;
+                    }
+
+                    .attempts {
+                        font-size: 14px;
+                        margin-right: 20px;
+                        white-space: nowrap;
+                        margin-bottom: 5px;
+                        flex-shrink: 0;
+
+                        b {
+                            font-size: 14px;
+                            color: var(--main-orange);
+                        }
+                    }
+                }
+
+                .noAttemptsLeftMessage {
+                    display: inline-block;
+                    margin-top: 20px;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .prevAttemptsText {
+            font-size: 14px;
+            font-family: var(--medium);
+            line-height: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    .firstAttempt {
+        border: 1px solid var(--main-orange);
+        padding: 20px;
+        border-radius: 10px;
+
+        h1 {
+            font-size: 32px;
+            line-height: 100%;
+            margin-bottom: 20px;
+        }
+
+        p { 
+            margin-bottom: 20px;
+
+            b {
+                color: var(--main-orange);
+            }
+        }
+    }
+}

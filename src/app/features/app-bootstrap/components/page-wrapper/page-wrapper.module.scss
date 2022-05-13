@@ -1,0 +1,10 @@
+.pageWrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.locked {
+    width: 100%;
+    max-width: 1340px;
+    pointer-events: none;
+}

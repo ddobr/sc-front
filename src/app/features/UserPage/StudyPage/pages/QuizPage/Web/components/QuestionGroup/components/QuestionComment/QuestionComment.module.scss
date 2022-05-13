@@ -1,0 +1,15 @@
+.comment {
+    padding: 10px 30px;
+    background-color: rgba(229, 112, 42, 0.1);
+    border-radius: 10px;
+
+    .commentHeader {
+        font-size: 14px;
+        color: var(--main-orange);
+        line-height: 21px;
+    }
+
+    .commentFooter {
+        font-size: 14px;
+    }
+}

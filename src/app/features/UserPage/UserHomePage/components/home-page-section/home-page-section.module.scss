@@ -1,0 +1,31 @@
+.homePageSection {
+    .header {
+        display: flex;
+        align-content: center;
+        justify-content: space-around;
+        margin-bottom: 15px;
+
+        .title {
+            font-size: 32px;
+            font-family: var(--black);
+            width: 80%;
+        }
+
+        .side {
+            width: 20%;
+        }
+    }
+
+    .headerMobile {
+        .title {
+            font-size: 32px;
+            font-family: var(--black);
+            width: 80%;
+            margin-bottom: 10px;
+        }
+    }
+
+    .downMobile {
+        margin-top: 10px;
+    }
+}

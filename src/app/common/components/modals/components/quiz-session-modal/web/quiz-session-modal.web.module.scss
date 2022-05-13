@@ -1,0 +1,34 @@
+.quizSessionModal {
+    pointer-events: auto;
+
+    background-color: var(--white);
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid var(--main-orange);
+    border-radius: 10px;
+
+    position: fixed;
+    top: 150px;
+    width: 220px;
+    right: calc((100vw - min(1440px, 100vw)) / 2 + 20px);
+
+    .boldColored {
+        font-size: 14px;
+        line-height: 172.8%;
+        font-family: var(--bold);
+        color: var(--main-orange);
+    }
+
+    .header {
+        font-size: 14px;
+        line-height: 172.8%;
+        font-family: var(--bold);
+    }
+
+    .main {
+        font-size: 14px;
+        line-height: 172.8%;
+        font-family: var(--medium);
+
+    }
+}

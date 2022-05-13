@@ -1,0 +1,58 @@
+.layout {
+    display: flex;
+    justify-content: flex-start;
+
+    .aside {
+        margin-left: 10px;
+        width: calc(22% - 5px);
+        display: flex;
+        justify-content: flex-start;
+        .asideContent {
+            width: 180px;
+            top: 80px;
+            position: sticky;
+            position: -webkit-sticky;
+        }
+    }
+
+    .main {
+        width: 56%;
+        overflow-y: visible;
+        overflow-x: visible;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .layout{
+        flex-direction: column;
+        align-items: center;
+        .main {
+            width: 90%;
+            overflow-y: auto;
+        }
+
+        .aside {
+            display: none;
+        }
+    }
+}
+
+@media (hover: none) {
+    .layout {
+        flex-direction: column;
+        margin-top: 58px;
+        align-items: center;
+        
+        .main {
+            width: 90%;
+            overflow-y: auto;
+            overflow: visible;
+        }
+
+        .aside {
+            display: none;
+        }
+    }
+}

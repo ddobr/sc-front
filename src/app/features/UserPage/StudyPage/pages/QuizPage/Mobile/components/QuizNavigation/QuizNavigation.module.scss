@@ -1,0 +1,31 @@
+.navigation {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow-x: scroll;
+    margin-bottom: 10px;
+    height: 49px;
+    position: relative;
+    width: 100vw;
+    margin-left: -5vw;
+    box-sizing: border-box;
+
+    &>div:first-of-type {
+        margin-left: 5vw;
+    }
+
+    .border {
+        width: 5vw;
+        height: 40px;
+        flex-shrink: 0;
+        content: '';
+    }
+
+    &>div:nth-last-child(2) {
+        margin-right: 0;
+    }
+    
+    &::-webkit-scrollbar {
+        display: none;
+    };
+}

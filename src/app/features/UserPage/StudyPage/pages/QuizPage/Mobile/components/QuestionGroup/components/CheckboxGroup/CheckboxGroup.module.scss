@@ -1,0 +1,17 @@
+.controlWrapper {
+    padding: 10px;
+    border: 1px solid var(--main-orange);
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+    &>label {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+
+        &>span:first-of-type {
+            padding: 0;
+            margin-right: 10px;
+        }
+    }
+}

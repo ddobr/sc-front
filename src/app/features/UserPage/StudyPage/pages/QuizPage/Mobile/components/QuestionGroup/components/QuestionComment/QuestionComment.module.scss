@@ -1,0 +1,30 @@
+.comment {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+
+    .commentHeader {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .commentFooter {
+        font-size: 14px;
+    }
+}
+
+.correct {
+    background-color: var(--correct-bg);
+
+    .commentHeader {
+        color: var(--correct-fg);
+    }
+}
+
+.incorrect {
+    background-color: var(--error-bg);
+
+    .commentHeader {
+        color: var(--error-fg);
+    }
+}

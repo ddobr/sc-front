@@ -1,0 +1,31 @@
+.userMenuWrapper {
+  width: 22%;
+  display: flex;
+  justify-content: center;
+
+  .userMenu {
+    justify-content: flex-end;
+    display: flex;
+    cursor: pointer;
+
+    .avatar {
+      width: 30px;
+      height: 30px;
+    }
+
+    .name {
+      display: inline-block;
+      background-color: inherit;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      font-family: var(--bold);
+      color: var(--black);
+
+      &:active {
+        border: none;
+        outline: none;
+      }
+    }
+  }
+}

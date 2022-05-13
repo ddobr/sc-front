@@ -1,0 +1,46 @@
+.questionBlock {
+    width: 100%;
+
+    &:last-of-type {
+        margin-bottom: 40px;
+    }
+
+    .title {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .grade {
+        color: var(--main-orange);
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-family: var(--light);
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .description {
+        font-size: 14px;
+        line-height: 25px;
+        margin-bottom: 10px;
+    }
+}
+
+.mobileHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+
+    .mobileIndex {
+        font-size: 18px;
+        font-family: var(--bold);
+        color: var(--main-orange);
+    }
+}

@@ -1,0 +1,22 @@
+.card {
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    .info {
+        margin-top: 10px;
+        font-size: 14px;
+        font-family: var(--normal);
+    }
+
+    .btnTop {
+        margin-top: auto;
+        margin-bottom: 5px;
+    }
+
+    .btnBottom {
+        margin-bottom: 10px;
+    }
+}
